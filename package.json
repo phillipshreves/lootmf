@@ -1,0 +1,19 @@
+{
+  "name": "hp-helper",
+  "version": "1.0.0",
+  "description": "App for assisting developers at High Point",
+  "main": "index.js",
+  "scripts": {
+    "start":"node ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/phillipshreves/hp-helper.git"
+  },
+  "author": "Phillip Shreves",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/phillipshreves/hp-helper/issues"
+  },
+  "homepage": "https://github.com/phillipshreves/hp-helper#readme"
+}

@@ -1,2 +1,1 @@
 CLEARED
-t sat
