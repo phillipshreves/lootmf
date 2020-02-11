@@ -1,5 +1,7 @@
 'use strict'
 
+require('./formatter.js');
+
 import { app, BrowserWindow } from 'electron'
 import * as path from 'path'
 import { format as formatUrl } from 'url'
@@ -16,7 +18,7 @@ function createMainWindow() {
     window.webContents.openDevTools()
   }
 
-  if (isDevelopment) {
+  if (false && isDevelopment) {
     window.loadURL(`http://localhost:${process.env.ELECTRON_WEBPACK_WDS_PORT}`)
   }
   else {

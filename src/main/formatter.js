@@ -11,7 +11,7 @@ function character_separator(character) {
     */
 }
 
-funtion character_reserved(character) {
+function character_reserved(character) {
     this.character = character;
     /*
         contains: + - * / ^ & = ≠ < > ≤ ≥ ( ) , ; [ ] " :: $ }
@@ -19,4 +19,8 @@ funtion character_reserved(character) {
         begins with a digit or a period
         has the same name as a function, parameter or keyword
     */
+}
+
+function split_parenthesis(parenthesis) {
+    this.parenthesis.split(/[()]+/).filter(String);
 }
