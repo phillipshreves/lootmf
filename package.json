@@ -1,0 +1,22 @@
+{
+  "name": "lootmf",
+  "version": "0.1.0",
+  "description": "A FileMaker ecosystem tool",
+  "main": "index.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/phillipshreves/lootmf.git"
+  },
+  "author": "Phillip Shreves",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/phillipshreves/lootmf/issues"
+  },
+  "homepage": "https://github.com/phillipshreves/lootmf#readme",
+  "devDependencies": {
+    "electron": "^10.1.0"
+  }
+}
