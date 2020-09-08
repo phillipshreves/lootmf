@@ -14,7 +14,7 @@ function createWindow () {
 
 	// and load the index.html of the app.
 	win.loadFile('index.html')
-)
+}
 
 // This method will be called when Electron has finished
 // initialization and is ready to create browser windows.

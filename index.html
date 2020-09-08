@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" href="formatter.css">
+		<script src="./formatter.js"></script>
+		<meta charset="UTF-8">
+		<title>lootmf - The FM Tool</title>
+		<!-- https://electronjs.org/docs/tutorial/security#csp-meta-tag -->
+		<meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline';" />
+	</head>
+	<body>
+		<div>
+			<h1>lootmf</h1>
+			<h2>The FileMaker developer's toolset</h2>
+		</div>
+		<div>
+			<form id="text_input_form">
+				<ul>
+					<li>
+						<button type="button" onclick="formatter(document.getElementById('text_input'))">Format</button>
+						<button type="reset">Clear</button>
+					</li>
+					<li>
+						<label for="text_input">Input:</label>
+						<textarea id="text_input" name="text_input" rows="20"></textarea>
+					</li>
+				</ul>
+			</form>
+			<form action="" method="GET">
+				<ul>
+					<li>
+						<label for="text_output">Output:</label>
+						<textarea id="text_output" name="text_output" rows="20"></textarea>
+					</li>
+				</ul>
+			</form>
+		</div>
+	</body>
+</html>
