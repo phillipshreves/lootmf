@@ -14,23 +14,22 @@
 			<h2>The FileMaker developer's toolset</h2>
 		</div>
 		<div>
-			<form id="text_input_form">
+			<form id="input_text_form">
 				<ul>
 					<li>
-						<button type="button" onclick="formatter(document.getElementById('text_input'))">Format</button>
-						<button type="reset">Clear</button>
+						<button type="button" onclick="formatter(document.getElementById('input_text').value)">Format</button>
 					</li>
 					<li>
-						<label for="text_input">Input:</label>
-						<textarea id="text_input" name="text_input" rows="20"></textarea>
+						<label for="input_text">Input:</label>
+						<textarea id="input_text" name="input_text" rows="20"></textarea>
 					</li>
 				</ul>
 			</form>
-			<form action="" method="GET">
+			<form id="output_text_form">
 				<ul>
 					<li>
-						<label for="text_output">Output:</label>
-						<textarea id="text_output" name="text_output" rows="20"></textarea>
+						<label for="output_text">Output:</label>
+						<textarea id="output_text" name="output_text" rows="20"></textarea>
 					</li>
 				</ul>
 			</form>
