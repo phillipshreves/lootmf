@@ -1,8 +1,8 @@
 {
-  "name": "test-package",
-  "productName": "test-package",
+  "name": "lootmf",
+  "productName": "lootmf",
   "version": "1.0.0",
-  "description": "My Electron application description",
+  "description": "The FileMaker developer's tool kit",
   "main": "src/index.js",
   "scripts": {
     "start": "electron-forge start",
@@ -24,7 +24,7 @@
         {
           "name": "@electron-forge/maker-squirrel",
           "config": {
-            "name": "test_package"
+            "name": "lootmf"
           }
         },
         {
@@ -35,10 +35,6 @@
         },
         {
           "name": "@electron-forge/maker-deb",
-          "config": {}
-        },
-        {
-          "name": "@electron-forge/maker-rpm",
           "config": {}
         }
       ]
