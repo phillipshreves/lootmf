@@ -58,7 +58,7 @@ function formatter(input_text) {
 
         let new_text = function(object){
             if(parsing_string) {
-                return object
+                return object + ' '
             } else {
                 // indent level control
                 switch (object) {
@@ -90,7 +90,7 @@ function formatter(input_text) {
                         break;
 
                     default:
-                        return object;
+                        return object + ' ';
                 }
             }
         };

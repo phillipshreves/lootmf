@@ -1,0 +1,29 @@
+Let(
+	[
+		~object = JSONGetElement( $seat_to_change_array ; "[" & $seat_counter & "].NameNumber" ) ;
+		~name_number = If(
+			Left( ~object ; 1 ) = "?" or IsEmpty( ~object ) or ~object = "{}" or ~object = "[]" ;
+	 		"" ;
+	 		~object
+	 	);
+
+		~object = JSONGetElement( $seat_to_change_array ; "[" & $seat_counter & "].Number" ) ;
+		~seat_number = If(
+			Left( ~object ; 1 ) = "?" or IsEmpty( ~object ) or ~object = "{}" or ~object = "[]" ;
+	 		"" ;
+	 		~object
+	 	);
+
+		~object = JSONGetElement( $seat_to_change_array ; "[" & $seat_counter & "].SegmentNumber" ) ;
+		~segment_number = If(
+			Left( ~object ; 1 ) = "?" or IsEmpty( ~object ) or ~object = "{}" or ~object = "[]" ;
+	 		"" ;
+	 		~object
+	 	)
+	];
+
+"<Seats>
+¶	<Seat NameNumber=\"" & ~name_number & "\" SeatNumber=\"" & ~seat_number & "\" SegmentNumber=\"" & ~segment_number & "\">
+¶	</Seat>
+¶</Seats>"
+)

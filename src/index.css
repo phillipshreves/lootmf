@@ -31,7 +31,7 @@ textarea{
     /* Align multiline text fields with their labels */
     vertical-align: top;
     /* provide space to type some text */
-    height: 10em;
+    height: 40%;
 }
 
 textarea:focus{
