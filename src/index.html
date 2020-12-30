@@ -1,43 +1,54 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<link rel="stylesheet" href="./index.css">
-		<script src="./formatter.js"></script>
-		<script type="text/javascript" src="./materialize/js/bin/materialize.min.js"></script>
-		<meta charset="UTF-8">
-		<title>lootmf - The FM Tool</title>
-		<!-- https://electronjs.org/docs/tutorial/security#csp-meta-tag -->
-		<meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline';" />
-	</head>
-	<body>
-		<nav class="nav-extended">
-			<div class="nav-wrapper">
-				<a href="#" class="brand-logo">looT MF|FM Tool</a>
-				<ul id="nav-mobile" class="right hide-on-med-and-down">
-					<li><a href="#">The FileMaker developer's toolset</a></li>
-				</ul>
-			</div>
-			<div class="nav-content">
-				<ul class="tabs tabs-transparent">
-					<li class="tab"><a class="active" href="./index.html"><i class="material-icons left">code</i>Formatter</a></li>
-					<li class="tab"><a href="#repository"><i class="material-icons left">search</i>Repository Checker</a></li>
-				</ul>
-			</div>
-		</nav>
+<head>
+	<meta charset="UTF-8">
+	<title>lootmf - The FM Tool</title>
 
+	<!-- materialize -->
+	<script type="text/javascript" src="../node_modules/jquery/dist/jquery.min.js"></script>
+	<script type="text/javascript" src="../node_modules/hammerjs/hammer.min.js"></script>
+	<script type="text/javascript" src="../node_modules/materialize-css/dist/js/materialize.js"></script>
+	<link rel="stylesheet" href="index.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
-		<div id="formatter" class="col s12">
-			<form id="input_text_form">
-				<ul>
-					<li>
-						<button type="button" onclick="formatter(document.getElementById('input_text').value)">Format</button>
-					</li>
-					<li>
-						<label for="input_text">Input:</label>
-						<textarea id="input_text" name="input_text" rows="20"></textarea>
-					</li>
-				</ul>
-			</form>
+	<!-- formatter -->
+	<script src="formatter.js"></script>
+
+	<!-- https://electronjs.org/docs/tutorial/security#csp-meta-tag -->
+	<meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline';" />
+</head>
+
+<body>
+	<nav class="nav-extended">
+		<div class="nav-wrapper">
+			<a href="#" class="brand-logo">looT MF|FM Tool</a>
+			<ul id="nav-mobile" class="right hide-on-med-and-down">
+				<li><a href="#">The FileMaker developer's toolset</a></li>
+			</ul>
 		</div>
-	</body>
+		<div class="nav-content">
+			<ul class="tabs tabs-transparent">
+				<li class="tab"><a class="active" href="index.html"><i class="material-icons left">code</i>Formatter</a></li>
+				<li class="tab"><a href="#repository"><i class="material-icons left">search</i>Repository Checker</a></li>
+			</ul>
+		</div>
+	</nav>
+
+
+	<div id="formatter" class="col s12">
+		<form id="input_text_form">
+			<ul>
+				<li>
+					<button type="button" onclick="formatter(document.getElementById('input_text').value)">Format</button>
+				</li>
+				<li>
+					<label for="input_text">Input:</label>
+					<textarea id="input_text" name="input_text" rows="20"></textarea>
+				</li>
+			</ul>
+		</form>
+
+	</div>
+
+</body>
 </html>
