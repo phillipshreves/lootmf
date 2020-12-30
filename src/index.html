@@ -3,19 +3,30 @@
 	<head>
 		<link rel="stylesheet" href="./index.css">
 		<script src="./formatter.js"></script>
+		<script type="text/javascript" src="./materialize/js/bin/materialize.min.js"></script>
 		<meta charset="UTF-8">
 		<title>lootmf - The FM Tool</title>
 		<!-- https://electronjs.org/docs/tutorial/security#csp-meta-tag -->
 		<meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline';" />
 	</head>
 	<body>
-		<div class="nav-wrapper">
-			<a href="#" class="brand-logo">FM Tool</a>
-			<ul>
-				<li><a href="#">The FileMaker developer's toolset</a></li>
-			</ul>
-		</div>
-		<div>
+		<nav class="nav-extended">
+			<div class="nav-wrapper">
+				<a href="#" class="brand-logo">looT MF|FM Tool</a>
+				<ul id="nav-mobile" class="right hide-on-med-and-down">
+					<li><a href="#">The FileMaker developer's toolset</a></li>
+				</ul>
+			</div>
+			<div class="nav-content">
+				<ul class="tabs tabs-transparent">
+					<li class="tab"><a class="active" href="./index.html"><i class="material-icons left">code</i>Formatter</a></li>
+					<li class="tab"><a href="#repository"><i class="material-icons left">search</i>Repository Checker</a></li>
+				</ul>
+			</div>
+		</nav>
+
+
+		<div id="formatter" class="col s12">
 			<form id="input_text_form">
 				<ul>
 					<li>
@@ -27,18 +38,6 @@
 					</li>
 				</ul>
 			</form>
-			<form id="output_text_form">
-				<ul>
-					<li>
-						<label for="output_text">Output:</label>
-						<textarea id="output_text" name="output_text" rows="20"></textarea>
-					</li>
-				</ul>
-			</form>
 		</div>
-
-
-
-		<script type="text/javascript" src="./materialize/js/bin/materialize.min.js"></script>
 	</body>
 </html>

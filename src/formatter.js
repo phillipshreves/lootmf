@@ -103,5 +103,5 @@ function formatter(input_text) {
 
 
     // Update the DOM
-    document.getElementById('output_text').innerHTML = output_text
+    document.getElementById('input_text').innerHTML = output_text
 };
