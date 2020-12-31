@@ -2,8 +2,11 @@
 <html>
 	<head>
 		<link rel="stylesheet" href="./index.css">
+		<link rel="stylesheet" href="./materialize.css">
 		<script src="./formatter.js"></script>
-		<script type="text/javascript" src="./materialize/js/bin/materialize.min.js"></script>
+		<script type="text/javascript" src="../node_modules/hammerjs/hammer.min.js"></script>
+		<script type="text/javascript" src="../node_modules/jquery/dist/jquery.min.js"></script>
+		<script type="text/javascript" src="../node_modules/materialize-css/dist/js/materialize.min.js"></script>
 		<meta charset="UTF-8">
 		<title>lootmf - The FM Tool</title>
 		<!-- https://electronjs.org/docs/tutorial/security#csp-meta-tag -->
@@ -19,7 +22,7 @@
 			</div>
 			<div class="nav-content">
 				<ul class="tabs tabs-transparent">
-					<li class="tab"><a class="active" href="./index.html"><i class="material-icons left">code</i>Formatter</a></li>
+					<li class="tab"><a class="active" href="#formatter"><i class="material-icons left">code</i>Formatter</a></li>
 					<li class="tab"><a href="#repository"><i class="material-icons left">search</i>Repository Checker</a></li>
 				</ul>
 			</div>
@@ -39,5 +42,9 @@
 				</ul>
 			</form>
 		</div>
+		<div id="repository" class="col s12">
+			<p>repository</p>
+		</div>
+		<script>M.AutoInit();</script>
 	</body>
 </html>
