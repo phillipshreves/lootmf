@@ -5,30 +5,33 @@
 	<title>lootmf - The FM Tool</title>
 
 	<!-- materialize -->
-	<script type="text/javascript" src="../node_modules/jquery/dist/jquery.min.js"></script>
+	<link rel="stylesheet" href="./index.css">
+	<link rel="stylesheet" href="./materialize.css">
 	<script type="text/javascript" src="../node_modules/hammerjs/hammer.min.js"></script>
+	<script type="text/javascript" src="../node_modules/jquery/dist/jquery.min.js"></script>
 	<script type="text/javascript" src="../node_modules/materialize-css/dist/js/materialize.min.js"></script>
-	<link rel="stylesheet" href="index.css">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
 	<!-- formatter -->
-	<script src="formatter.js"></script>
+	<script src="./formatter.js"></script>
 
 	<!-- https://electronjs.org/docs/tutorial/security#csp-meta-tag -->
 	<meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline';" />
+
+	<!-- mobile device-->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 </head>
 
 <body>
 	<nav class="nav-extended">
 		<div class="nav-wrapper">
-			<a href="#" class="brand-logo">looT MF|FM Tool</a>
-			<ul id="nav-mobile" class="right hide-on-med-and-down">
+			<a href="#" class="brand-logo center">looT MF|FM Tool</a>
+			<ul id="nav-mobile" class="right hide-on-small-only">
 				<li><a href="#">The FileMaker developer's toolset</a></li>
 			</ul>
 		</div>
 		<div class="nav-content">
 			<ul class="tabs tabs-transparent">
-				<li class="tab"><a class="active" href="index.html"><i class="material-icons left">code</i>Formatter</a></li>
+				<li class="tab"><a class="active" href="#formatter"><i class="material-icons left">code</i>Formatter</a></li>
 				<li class="tab"><a href="#repository"><i class="material-icons left">search</i>Repository Checker</a></li>
 			</ul>
 		</div>
@@ -40,6 +43,7 @@
 			<ul>
 				<li>
 					<button type="button" onclick="formatter(document.getElementById('input_text').value)">Format</button>
+					<a class="waves-effect waves-light btn" onclick="formatter(document.getElementById('input_text').value)">Format</a>
 				</li>
 				<li>
 					<label for="input_text">Input:</label>
@@ -47,8 +51,10 @@
 				</li>
 			</ul>
 		</form>
-
 	</div>
-
+	<div id="repository" class="col s12">
+		<p>repository</p>
+	</div>
+	<script>M.AutoInit();</script>
 </body>
 </html>
