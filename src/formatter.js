@@ -103,5 +103,6 @@ function formatter(input_text) {
 
 
     // Update the DOM
-    document.getElementById('input_text').innerHTML = output_text
+    $('#output_text').val(output_text);
+    M.textareaAutoResize($('#output_text'));
 };

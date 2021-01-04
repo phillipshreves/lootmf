@@ -5,11 +5,11 @@
 	<title>lootmf - The FM Tool</title>
 
 	<!-- materialize -->
-	<link rel="stylesheet" href="./index.css">
-	<link rel="stylesheet" href="./materialize.css">
 	<script type="text/javascript" src="../node_modules/hammerjs/hammer.min.js"></script>
 	<script type="text/javascript" src="../node_modules/jquery/dist/jquery.min.js"></script>
 	<script type="text/javascript" src="../node_modules/materialize-css/dist/js/materialize.min.js"></script>
+	<link rel="stylesheet" href="./index.css">
+	<link rel="stylesheet" href="./materialize.css">
 
 	<!-- formatter -->
 	<script src="./formatter.js"></script>
@@ -38,22 +38,29 @@
 	</nav>
 
 
-	<div id="formatter" class="col s12">
-		<form id="input_text_form">
-			<ul>
-				<li>
-					<button type="button" onclick="formatter(document.getElementById('input_text').value)">Format</button>
-					<a class="waves-effect waves-light btn" onclick="formatter(document.getElementById('input_text').value)">Format</a>
-				</li>
-				<li>
-					<label for="input_text">Input:</label>
-					<textarea id="input_text" name="input_text" rows="20"></textarea>
-				</li>
-			</ul>
-		</form>
-	</div>
-	<div id="repository" class="col s12">
-		<p>repository</p>
+	<div class="container">
+		<div id="formatter" class="col s12">
+			<div class = "row">
+				<form class="col s12" id="input_text_form">
+					<div class="row valign-wrapper">
+						<div class="col s2">
+							<a class="waves-effect waves-light btn" onclick="formatter(document.getElementById('input_text').value)">Format</a>
+						</div>
+						<div class="input-field col s10">
+							<input placeholder="Input" id="input_text" type="text">
+						</div>
+					</div>
+					<div class="row">
+						<div class="input-field col s12">
+							<textarea placeholder="Output" id="output_text" class="materialize-textarea"></textarea>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+		<div id="repository" class="col s12">
+			<p>repository</p>
+		</div>
 	</div>
 	<script>M.AutoInit();</script>
 </body>
