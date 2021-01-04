@@ -44,7 +44,14 @@
     "electron-squirrel-startup": "^1.0.0",
     "hammerjs": "^2.0.8",
     "jquery": "^3.5.1",
+<<<<<<< HEAD
     "material-design-icons": "^3.0.1",
+=======
+<<<<<<< HEAD
+=======
+    "material-design-icons": "^3.0.1",
+>>>>>>> 20129213d3438160754d0e404e8c20085d46b8b5
+>>>>>>> 3657a29358793cee5e34ba189df839edddf42d9f
     "materialize-css": "^1.0.0-rc.2"
   },
   "devDependencies": {
